@@ -9,6 +9,9 @@
   nav {
     background: #44475a;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     ul {
       li {
         display: flex;
@@ -44,21 +47,30 @@
         }
       }
     }
-    .initab-logo {
-      width: 100px;
-      height: auto;
-      cursor: pointer;
-      &:hover {
-        #Group-5 {
-          fill: #e5da7b;
-          transition: 0.4s;
+    .logo-socials {
+      margin-bottom: 18px;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .initab-logo {
+        width: 100px;
+        height: auto;
+        cursor: pointer;
+        &:hover {
+          #Group-5 {
+            fill: #e5da7b;
+            transition: 0.4s;
+          }
         }
       }
-    }
-    .socials {
-      img {
-        width: 24px;
-        height: 24px;
+      .socials {
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
