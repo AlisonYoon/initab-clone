@@ -1,0 +1,8 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 275px 552px 255px;
+  grid-template-rows: 100%;
+  background: chocolate;
+}
+
+/*# sourceMappingURL=index.css.map */
