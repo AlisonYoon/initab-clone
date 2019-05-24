@@ -1,7 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 .container {   
+  font-family: 'Inconsolata', monospace;
   display: grid;
   grid-template-columns: 1fr 275px 552px 255px;
-  grid-template-rows: 100%;
+  height: 100vh;
   background: chocolate;
+  nav {
+    background: #44475a;
+    padding: 0 10px;
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        margin: 18px 0;
+        &:first-child {
+          color: #8BE9FD;
+        }
+        &:nth-child(2) {
+          color: #50FA7B;
+        }
+        &:nth-child(3) {
+          color: #FFB86C;
+        }
+        &:nth-child(4) {
+          color: #FF79C6;
+        }
+        &:nth-child(5) {
+          color: #BD93F9;
+        }
+        &:nth-child(6) {
+          color: #F8F8F2;
+        }
+        &:nth-child(7) {
+          color: #E5DB74;
+        }
+        img {
+          width: 22px;
+          height: 22px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .initab-logo {
+      width: 100px;
+      height: auto;
+      cursor: pointer;
+      &:hover {
+        #Group-5 {
+          fill: #e5da7b;
+          transition: 0.4s;
+        }
+      }
+    }
+    .socials {
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 }
