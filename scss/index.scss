@@ -74,4 +74,16 @@
       }
     }
   }
+  section, aside {
+    h1 {
+      text-transform: uppercase;
+      color: #8fe9fc;
+      display: flex;
+      align-items: center;
+      img {
+        width: 16px;
+        margin-right: 5px;
+      }
+    }
+  }
 }

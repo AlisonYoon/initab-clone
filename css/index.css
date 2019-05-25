@@ -68,5 +68,15 @@
   width: 24px;
   height: 24px;
 }
+.container section h1, .container aside h1 {
+  text-transform: uppercase;
+  color: #8fe9fc;
+  display: flex;
+  align-items: center;
+}
+.container section h1 img, .container aside h1 img {
+  width: 16px;
+  margin-right: 5px;
+}
 
 /*# sourceMappingURL=index.css.map */
