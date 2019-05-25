@@ -75,14 +75,52 @@
     }
   }
   section, aside {
+    background: #282a35;
     h1 {
       text-transform: uppercase;
       color: #8fe9fc;
       display: flex;
       align-items: center;
+      margin: 40px 0;
       img {
         width: 16px;
         margin-right: 5px;
+      }
+    }
+    &#redditFeed {
+      overflow-y: auto;
+      padding: 0 20px;
+      &::-webkit-scrollbar { 
+        width: 0 !important 
+      }
+      #redditNewsItems {
+        .news-item-block {
+          margin-bottom: 40px;
+          color: #fff;
+          border-left: 3px solid #44475a;
+          padding-left: 20px;
+          font-size: 14px;
+          line-height: 18px;
+          &:hover {
+            border-left: 3px solid #50FA7B;
+            transition: 0.4s;
+          }
+          .posted-by{
+            color: #8fe9fc;
+            margin-top: 5px;
+          }
+          .author {
+            color: #E5DB74;
+          }
+          .score {
+            color: #6373a2;
+            margin-top: 5px;
+          }
+          .link {
+            color: #FF79C6;
+            margin-top: 5px;
+          }
+        }
       }
     }
   }

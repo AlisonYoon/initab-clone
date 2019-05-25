@@ -73,18 +73,6 @@ const redditNews = [
    }
 ]
 
-
-// for(var i = 0; i < redditNews.length; i++) {
-//    let obj = redditNews[i];
-//    console.log(obj.text);
-//    document.getElementById('redditNewsItems').innerHTML = `
-//    <p class="reddit-news-text"> ${obj.text}</p>
-//    <p class="author">Posted by: <span class="reddit-news-author"> ${obj.author}</span></p>
-//    <p class="score">Reddit Score: <span class="reddit-news-score">${obj.score}</span></p>
-//    <a href="" class="link"><span class="reddit-news-link">${obj.link}</span></a>
-//    `
-// }
-
 const redditNewsItems = document.getElementById('redditNewsItems');
 const redditNewsText = document.getElementById('text-js');
 const redditNewsAuthor = document.getElementById('author-js');
@@ -107,28 +95,11 @@ for(let i = 0; i < redditNews.length; i++) {
 }
 
 
-// for(let j = 0; j < redditItemArray.length; j++) {
-//    // do stuff
-//    document.write("<p>"+ redditItemArray[j].text + "</p>")
-//    document.write("<p>"+ redditItemArray[j].author + "</p>")
-//    document.write("<p>"+ redditItemArray[j].score + "</p>")
-//    document.write("<p>"+ redditItemArray[j].link + "</p>")
-//    redditNewsText.innterHTML = "<p>"+ redditItemArray[j].text + "</p>";
-// }
 
-var i, text, author, score, link = "";
+var i, text = "";
 
 for (i in redditItemArray) {
-   text += redditItemArray[i].text + `<p class="posted-by">` + "Posted By:" + "</p>" + `<p class="author">` + redditItemArray[i].author + "</p>" + `<p class="score">` + "Reddit Score:" + redditItemArray[i].score + "</p>"  + `<a href="" class="link">` +redditItemArray[i].link + "</a>" + "<br>";
-   // author += redditItemArray[i].author;
-   // link += redditItemArray[i].link;
-
-   // for (j in redditNews[i].author) {
-   //   x += redditNews[i].author[j] + "<br>";
-   // }
+   text += `<div class="news-item-block">` + redditItemArray[i].text + `<p class="posted-by">` + "Posted By:" + "</p>" + `<p class="author">` + redditItemArray[i].author + "</p>" + `<p class="score">` + "Reddit Score:" + redditItemArray[i].score + "</p>" + `<a href="" class="link">` + redditItemArray[i].link + "</a>" + "<br>" + "</div>";
    redditNewsItems.innerHTML = text;
-   // redditNewsAuthor.innterHTML = author;
-   // redditNewsLink.innerHTML = link;
-
  }
 
