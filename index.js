@@ -73,3 +73,59 @@ const redditNews = [
    }
 ]
 
+
+// for(var i = 0; i < redditNews.length; i++) {
+//    let obj = redditNews[i];
+//    console.log(obj.text);
+//    document.getElementById('redditNewsItems').innerHTML = `
+//    <p class="reddit-news-text"> ${obj.text}</p>
+//    <p class="author">Posted by: <span class="reddit-news-author"> ${obj.author}</span></p>
+//    <p class="score">Reddit Score: <span class="reddit-news-score">${obj.score}</span></p>
+//    <a href="" class="link"><span class="reddit-news-link">${obj.link}</span></a>
+//    `
+// }
+
+const redditNewsItems = document.getElementById('redditNewsItems');
+const redditNewsText = document.getElementById('text-js');
+const redditNewsAuthor = document.getElementById('author-js');
+const redditNewsScore = document.getElementById('score-js');
+const redditNewsLink = document.getElementById('link-js');
+
+// create total array
+var redditItemArray=[];
+
+for(let i = 0; i < redditNews.length; i++) {
+   // create new object to hold stuff
+   var redditItem = new Object();
+   // populate object with each item
+   redditItem.text = redditNews[i].text + "<br>";
+   redditItem.author = redditNews[i].author;
+   redditItem.score = redditNews[i].score;
+   redditItem.link = redditNews[i].link;
+   // push objects to total array
+   redditItemArray.push(redditItem);
+}
+
+
+// for(let j = 0; j < redditItemArray.length; j++) {
+//    // do stuff
+//    document.write("<p>"+ redditItemArray[j].text + "</p>")
+//    document.write("<p>"+ redditItemArray[j].author + "</p>")
+//    document.write("<p>"+ redditItemArray[j].score + "</p>")
+//    document.write("<p>"+ redditItemArray[j].link + "</p>")
+//    redditNewsText.innterHTML = "<p>"+ redditItemArray[j].text + "</p>";
+// }
+
+var i, text, author, score, link = "";
+
+for (i in redditItemArray) {
+   text += redditItemArray[i].text + "<br>";
+
+
+   // for (j in redditNews[i].author) {
+   //   x += redditNews[i].author[j] + "<br>";
+   // }
+   redditNewsText.innerHTML = text;
+
+ }
+
