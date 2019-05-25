@@ -119,13 +119,16 @@ for(let i = 0; i < redditNews.length; i++) {
 var i, text, author, score, link = "";
 
 for (i in redditItemArray) {
-   text += redditItemArray[i].text + "<br>";
-
+   text += redditItemArray[i].text + `<p class="posted-by">` + "Posted By:" + "</p>" + `<p class="author">` + redditItemArray[i].author + "</p>" + `<p class="score">` + "Reddit Score:" + redditItemArray[i].score + "</p>"  + `<a href="" class="link">` +redditItemArray[i].link + "</a>" + "<br>";
+   // author += redditItemArray[i].author;
+   // link += redditItemArray[i].link;
 
    // for (j in redditNews[i].author) {
    //   x += redditNews[i].author[j] + "<br>";
    // }
-   redditNewsText.innerHTML = text;
+   redditNewsItems.innerHTML = text;
+   // redditNewsAuthor.innterHTML = author;
+   // redditNewsLink.innerHTML = link;
 
  }
 
