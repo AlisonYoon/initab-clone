@@ -82,14 +82,14 @@
   width: 16px;
   margin-right: 5px;
 }
-.container section#redditFeed, .container aside#redditFeed {
+.container section.redditFeed, .container aside.redditFeed {
   overflow-y: auto;
   padding: 0 20px;
 }
-.container section#redditFeed::-webkit-scrollbar, .container aside#redditFeed::-webkit-scrollbar {
+.container section.redditFeed::-webkit-scrollbar, .container aside.redditFeed::-webkit-scrollbar {
   width: 0 !important;
 }
-.container section#redditFeed #redditNewsItems .news-item-block, .container aside#redditFeed #redditNewsItems .news-item-block {
+.container section.redditFeed #redditNewsItems .news-item-block, .container aside.redditFeed #redditNewsItems .news-item-block {
   margin-bottom: 40px;
   color: #fff;
   border-left: 3px solid #44475a;
@@ -97,24 +97,44 @@
   font-size: 14px;
   line-height: 18px;
 }
-.container section#redditFeed #redditNewsItems .news-item-block:hover, .container aside#redditFeed #redditNewsItems .news-item-block:hover {
+.container section.redditFeed #redditNewsItems .news-item-block:hover, .container aside.redditFeed #redditNewsItems .news-item-block:hover {
   border-left: 3px solid #50FA7B;
   transition: 0.4s;
 }
-.container section#redditFeed #redditNewsItems .news-item-block .posted-by, .container aside#redditFeed #redditNewsItems .news-item-block .posted-by {
+.container section.redditFeed #redditNewsItems .news-item-block .posted-by, .container aside.redditFeed #redditNewsItems .news-item-block .posted-by {
   color: #8fe9fc;
   margin-top: 5px;
 }
-.container section#redditFeed #redditNewsItems .news-item-block .author, .container aside#redditFeed #redditNewsItems .news-item-block .author {
+.container section.redditFeed #redditNewsItems .news-item-block .author, .container aside.redditFeed #redditNewsItems .news-item-block .author {
   color: #E5DB74;
 }
-.container section#redditFeed #redditNewsItems .news-item-block .score, .container aside#redditFeed #redditNewsItems .news-item-block .score {
+.container section.redditFeed #redditNewsItems .news-item-block .score, .container aside.redditFeed #redditNewsItems .news-item-block .score {
   color: #6373a2;
   margin-top: 5px;
 }
-.container section#redditFeed #redditNewsItems .news-item-block .link, .container aside#redditFeed #redditNewsItems .news-item-block .link {
+.container section.redditFeed #redditNewsItems .news-item-block .link, .container aside.redditFeed #redditNewsItems .news-item-block .link {
   color: #FF79C6;
   margin-top: 5px;
+}
+.container section.jsHistory, .container aside.jsHistory {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  font-size: 14px;
+  line-height: 18px;
+}
+.container section.jsHistory .js-history, .container aside.jsHistory .js-history {
+  overflow-y: auto;
+  padding: 0 20px;
+}
+.container section.jsHistory .js-history::-webkit-scrollbar, .container aside.jsHistory .js-history::-webkit-scrollbar {
+  width: 0 !important;
+}
+.container section.jsHistory .js-history #jsHistoryItems .history-text, .container aside.jsHistory .js-history #jsHistoryItems .history-text {
+  color: #6373a2;
+}
+.container section.jsHistory .js-history #jsHistoryItems .history-time, .container aside.jsHistory .js-history #jsHistoryItems .history-time {
+  color: #999;
 }
 
 /*# sourceMappingURL=index.css.map */

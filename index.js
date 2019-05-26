@@ -73,33 +73,75 @@ const redditNews = [
    }
 ]
 
+const jsHistory = [
+   {
+      "name" : "Relevant Javascript History on Pre-Work Project: Landing Page - Initab | Trello",
+      "time" : "12:53 AM"
+   },
+   {
+      "name" : "Relevant Javascript History on Pre-Work Project: Landing Page - Initab | Trello",
+      "time" : "12:53 AM"
+   },
+   {
+      "name" : "AlisonYoon/initab-clone: Chingu pre-work individual project. Chrome extension Initab clone",
+      "time" : "12:47 AM"
+   },
+   {
+      "name" : "AlisonYoon/initab-clone: Chingu pre-work individual project. Chrome extension Initab clone",
+      "time" : "12:46 AM"
+   },
+   {
+      "name" : "Home / Twitter",
+      "time" : "12:43 AM"
+   },
+   {
+      "name" : "Home / Twitter",
+      "time" : "12:43 AM"
+   },
+   {
+      "name" : "Document",
+      "time" : "12:41 AM"
+   },
+   {
+      "name" : "Hide scroll bar, but while still being able to scroll using CSS - GeeksforGeeks",
+      "time" : "12:37 AM"
+   },
+   {
+      "name" : "hide scroll css - Google Search",
+      "time" : "12:37 AM"
+   },
+   {
+      "name" : "Document",
+      "time" : "a day ago"
+   },
+   {
+      "name" : "AlisonYoon/initab-clone: Chingu pre-work individual project. Chrome extension Initab clone",
+      "time" : "a day ago"
+   },
+   {
+      "name" : "Tryit Editor v3.6",
+      "time" : "a day ago"
+   },
+   {
+      "name" : "JSON Arrays",
+      "time" : "a day ago"
+   }
+]
+
 const redditNewsItems = document.getElementById('redditNewsItems');
-const redditNewsText = document.getElementById('text-js');
-const redditNewsAuthor = document.getElementById('author-js');
-const redditNewsScore = document.getElementById('score-js');
-const redditNewsLink = document.getElementById('link-js');
-
-// create total array
-var redditItemArray=[];
-
-for(let i = 0; i < redditNews.length; i++) {
-   // create new object to hold stuff
-   var redditItem = new Object();
-   // populate object with each item
-   redditItem.text = redditNews[i].text + "<br>";
-   redditItem.author = redditNews[i].author;
-   redditItem.score = redditNews[i].score;
-   redditItem.link = redditNews[i].link;
-   // push objects to total array
-   redditItemArray.push(redditItem);
-}
-
-
-
 var i, text = "";
 
-for (i in redditItemArray) {
-   text += `<div class="news-item-block">` + redditItemArray[i].text + `<p class="posted-by">` + "Posted By:" + "</p>" + `<p class="author">` + redditItemArray[i].author + "</p>" + `<p class="score">` + "Reddit Score:" + redditItemArray[i].score + "</p>" + `<a href="" class="link">` + redditItemArray[i].link + "</a>" + "<br>" + "</div>";
+for (i in redditNews) {
+   text += `<div class="news-item-block">` + redditNews[i].text + `<p class="posted-by">` + "Posted By:" + "</p>" + `<p class="author">` + redditNews[i].author + "</p>" + `<p class="score">` + "Reddit Score:" + redditNews[i].score + "</p>" + `<a href="" class="link">` + redditNews[i].link + "</a>" + "<br>" + "</div>";
    redditNewsItems.innerHTML = text;
  }
+//reddit news feed end
 
+
+const jsHistoryItems = document.getElementById('jsHistoryItems');
+var j, news = "";
+
+for (j in jsHistory) {
+   news += `<div class="history-text">` + jsHistory[j].name + "</div>" + `<div class="history-time">` + jsHistory[j].time + "</div>";
+   jsHistoryItems.innerHTML = news;
+}

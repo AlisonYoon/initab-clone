@@ -87,7 +87,7 @@
         margin-right: 5px;
       }
     }
-    &#redditFeed {
+    &.redditFeed {
       overflow-y: auto;
       padding: 0 20px;
       &::-webkit-scrollbar { 
@@ -121,6 +121,28 @@
             margin-top: 5px;
           }
         }
+      }
+    }
+    &.jsHistory {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%;
+      font-size: 14px;
+      line-height: 18px;
+      .js-history {
+          overflow-y: auto;
+          padding: 0 20px;
+          &::-webkit-scrollbar { 
+            width: 0 !important 
+          }
+          #jsHistoryItems {
+            .history-text {
+              color: #6373a2;
+            }
+            .history-time {
+              color: #999;
+            }
+          }
       }
     }
   }
