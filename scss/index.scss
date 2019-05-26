@@ -125,8 +125,8 @@
     }
     &.jsHistory {
       display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 50% 50%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
       font-size: 14px;
       line-height: 18px;
       overflow: hidden;
@@ -139,7 +139,7 @@
           }
           #jsHistoryItems {
             display: grid;
-            grid-template-columns: 80% 20%;
+            grid-template-columns: 1fr 36px;
             div {
               margin: 10px 0;
             }
@@ -196,7 +196,7 @@
     }
     &.githubIssues {
       display: grid;
-      grid-template-rows: 80% 20%;
+      grid-template-rows: 1fr 150px;
       .tab-area {
         display: flex;
         flex-direction: column;
