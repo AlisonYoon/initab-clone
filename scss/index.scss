@@ -194,5 +194,25 @@
         }
       }
     }
+    &.githubIssues {
+      .tab-area {
+        .tab button {
+          border: none;
+          outline: none;
+          background: none;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            background: #ddd;
+          }
+          &.active {
+            background: #ccc;
+          }
+        }
+        .tabcontent {
+          display: none;
+        }
+      }
+    }
   }
 }

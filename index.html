@@ -60,10 +60,22 @@
                   Open the SETTINGS panel and add the URLs of your favorites sites to the 'CUSTOM LINKS' textarea.</p>
             <button id="dontShow">&#x274E; Got it, don't show me this again</button>
          </div>
-
       </section>
-      <aside>
+      <aside class="githubIssues">
             <h1><img src="images/githubhistory.png" alt="">github issues history</h1>
+            <div class="tab-area">
+               <div class="tab">
+                  <button class="tablinks" onclick="openTab(event, 'issues')">issues</button>
+                  <button class="tablinks" onclick="openTab(event, 'pullrequests')">pull requests</button>
+               </div>
+               <div id="issues" class="tabcontent">
+                  issues
+               </div>
+               <div id="pullrequests" class="tabcontent">
+                  content
+               </div>
+            </div>
+            <div class="ad-area"></div>
       </aside>
 
    </div>

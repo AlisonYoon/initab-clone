@@ -187,5 +187,21 @@
   outline: none;
   cursor: pointer;
 }
+.container section.githubIssues .tab-area .tab button, .container aside.githubIssues .tab-area .tab button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container section.githubIssues .tab-area .tab button:hover, .container aside.githubIssues .tab-area .tab button:hover {
+  background: #ddd;
+}
+.container section.githubIssues .tab-area .tab button.active, .container aside.githubIssues .tab-area .tab button.active {
+  background: #ccc;
+}
+.container section.githubIssues .tab-area .tabcontent, .container aside.githubIssues .tab-area .tabcontent {
+  display: none;
+}
 
 /*# sourceMappingURL=index.css.map */
