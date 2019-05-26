@@ -191,6 +191,19 @@
   display: grid;
   grid-template-rows: 80% 20%;
 }
+.container section.githubIssues .tab-area, .container aside.githubIssues .tab-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container section.githubIssues .tab-area .tab, .container aside.githubIssues .tab-area .tab {
+  height: 56px;
+  width: 100%;
+  border-bottom: 1px solid #44475a;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .container section.githubIssues .tab-area .tab button, .container aside.githubIssues .tab-area .tab button {
   border: none;
   outline: none;
@@ -207,9 +220,13 @@
 }
 .container section.githubIssues .tab-area .tab button:first-child, .container aside.githubIssues .tab-area .tab button:first-child {
   color: #E5DB74;
+  margin-left: 40px;
 }
 .container section.githubIssues .tab-area .tab button:first-child:hover, .container aside.githubIssues .tab-area .tab button:first-child:hover {
   color: #E5DB74;
+}
+.container section.githubIssues .tab-area .tab button:nth-child(2), .container aside.githubIssues .tab-area .tab button:nth-child(2) {
+  margin-right: 40px;
 }
 .container section.githubIssues .tab-area .tab button span, .container aside.githubIssues .tab-area .tab button span {
   font-size: 1.4rem;

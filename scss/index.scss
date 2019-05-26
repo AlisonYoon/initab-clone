@@ -198,7 +198,17 @@
       display: grid;
       grid-template-rows: 80% 20%;
       .tab-area {
-        .tab button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tab {
+          height: 56px;
+          width: 100%;
+          border-bottom: 1px solid #44475a;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          button {
           border: none;
           outline: none;
           background: none;
@@ -213,9 +223,13 @@
             }
           &:first-child {
             color: #E5DB74;
+            margin-left: 40px;
             &:hover {
               color: #E5DB74;
             }
+          }
+          &:nth-child(2) {
+            margin-right: 40px;
           }
           span {
             font-size: 1.4rem;
@@ -231,6 +245,7 @@
             }
           }
         }
+      }
         .tabcontent {
           display: none;
         }
