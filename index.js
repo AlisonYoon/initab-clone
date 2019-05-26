@@ -145,3 +145,42 @@ for (j in jsHistory) {
    news += `<div class="history-text">` + jsHistory[j].name + "</div>" + `<div class="history-time">` + jsHistory[j].time + "</div>";
    jsHistoryItems.innerHTML = news;
 }
+//JS history feed end
+
+const jsDate = document.getElementById('jsDate');
+
+// function clock(){
+//    const date = new Date();
+//    const hours = date.getHours();
+//    const minutes = date.getMinutes();
+//    jsDate.innerText = hours + ":" + minutes + ;
+// }
+function formatAMPM() {
+   const date = new Date();
+   var hours = date.getHours();
+   var minutes = date.getMinutes();
+   var d = date.getDate();
+   var year = date.getFullYear();
+   var month = new Array();
+   month[0] = "January";
+   month[1] = "February";
+   month[2] = "March";
+   month[3] = "April";
+   month[4] = "May";
+   month[5] = "June";
+   month[6] = "July";
+   month[7] = "August";
+   month[8] = "September";
+   month[9] = "October";
+   month[10] = "November";
+   month[11] = "December";
+   var m = month[date.getMonth()];
+   var ampm = hours >= 12 ? 'PM' : 'AM';
+   hours = hours % 12;
+   hours = hours ? hours : 12; // the hour '0' should be '12'
+   minutes = minutes < 10 ? '0'+minutes : minutes;
+   var strTime = `<span class="clock">` + hours + ':' + minutes + "</span>" + `<span class="ampm">` + ampm + "</span>" + `<div class="dateyear">` + m + d + "," + year + "</div>" ;
+
+   jsDate.innerHTML = strTime;
+ }
+formatAMPM();
