@@ -179,7 +179,7 @@ function formatAMPM() {
    hours = hours % 12;
    hours = hours ? hours : 12; // the hour '0' should be '12'
    minutes = minutes < 10 ? '0'+minutes : minutes;
-   var strTime = `<span class="clock">` + hours + ':' + minutes + "</span>" + `<span class="ampm">` + ampm + "</span>" + `<div class="dateyear">` + m + d + "," + year + "</div>" ;
+   var strTime = `<div class="dateandtime"><h2>` + hours + ':' + minutes + `<span class="ampm">` + ampm + `</span> </h2><br>` + `<div class="dateyear">` + m + d + "," + year + `</div></div>` ;
 
    jsDate.innerHTML = strTime;
  }
