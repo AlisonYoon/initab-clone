@@ -204,12 +204,13 @@ dontShow.addEventListener('click', dontShowAgain, true);
 //do not show message section end
 
 function openTab(evt, name){
-   var i, tabcontent, tablinks;
+   var i, tabcontent, tablinks, selectedtab;
    tabcontent = document.getElementsByClassName('tabcontent');
    for(i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
    }
    tablinks = document.getElementsByClassName('tablinks');
+   selectedtab = document.getElementsByClassName('selectedtab');
    for(i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace("active", "");
    }

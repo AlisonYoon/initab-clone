@@ -62,11 +62,16 @@
          </div>
       </section>
       <aside class="githubIssues">
-            <h1><img src="images/githubhistory.png" alt="">github issues history</h1>
+
             <div class="tab-area">
+               <h1><img src="images/githubhistory.png" alt="">github issues history</h1>
                <div class="tab">
-                  <button class="tablinks" onclick="openTab(event, 'issues')" id="defaultOpen">issues</button>
-                  <button class="tablinks" onclick="openTab(event, 'pullrequests')">pull requests</button>
+                  <button class="tablinks" onclick="openTab(event, 'issues')" id="defaultOpen">issues
+                  <span class="selected-tab block">&#9652;</span>
+                  </button>
+                  <button class="tablinks" onclick="openTab(event, 'pullrequests')">pull requests
+                  <span class="selected-tab">&#9652;</span>
+                  </button>
                </div>
                <div id="issues" class="tabcontent">
                   issues
@@ -75,7 +80,9 @@
                   content
                </div>
             </div>
-            <div class="ad-area"></div>
+            <div class="ad-area">
+               <div class="empty-ad-section"></div>
+            </div>
       </aside>
 
    </div>

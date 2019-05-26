@@ -187,21 +187,52 @@
   outline: none;
   cursor: pointer;
 }
+.container section.githubIssues, .container aside.githubIssues {
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
 .container section.githubIssues .tab-area .tab button, .container aside.githubIssues .tab-area .tab button {
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
   transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  position: relative;
+  color: #FF79C6;
 }
 .container section.githubIssues .tab-area .tab button:hover, .container aside.githubIssues .tab-area .tab button:hover {
-  background: #ddd;
+  color: #50FA7B;
 }
-.container section.githubIssues .tab-area .tab button.active, .container aside.githubIssues .tab-area .tab button.active {
-  background: #ccc;
+.container section.githubIssues .tab-area .tab button:first-child, .container aside.githubIssues .tab-area .tab button:first-child {
+  color: #E5DB74;
+}
+.container section.githubIssues .tab-area .tab button:first-child:hover, .container aside.githubIssues .tab-area .tab button:first-child:hover {
+  color: #E5DB74;
+}
+.container section.githubIssues .tab-area .tab button span, .container aside.githubIssues .tab-area .tab button span {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-left: -4.5px;
+  display: none;
+}
+.container section.githubIssues .tab-area .tab button.active span, .container aside.githubIssues .tab-area .tab button.active span {
+  display: block;
 }
 .container section.githubIssues .tab-area .tabcontent, .container aside.githubIssues .tab-area .tabcontent {
   display: none;
+}
+.container section.githubIssues .ad-area .empty-ad-section, .container aside.githubIssues .ad-area .empty-ad-section {
+  width: 80%;
+  height: 80%;
+  border-left: 3px solid #44475a;
+}
+.container section.githubIssues .ad-area:hover .empty-ad-section, .container aside.githubIssues .ad-area:hover .empty-ad-section {
+  border-left: 3px solid #50FA7B;
+  transition: 0.4s;
 }
 
 /*# sourceMappingURL=index.css.map */

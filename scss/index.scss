@@ -195,6 +195,8 @@
       }
     }
     &.githubIssues {
+      display: grid;
+      grid-template-rows: 80% 20%;
       .tab-area {
         .tab button {
           border: none;
@@ -202,15 +204,48 @@
           background: none;
           cursor: pointer;
           transition: 0.3s;
-          &:hover {
-            background: #ddd;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          position: relative;
+          color: #FF79C6;
+            &:hover {
+              color: #50FA7B;
+            }
+          &:first-child {
+            color: #E5DB74;
+            &:hover {
+              color: #E5DB74;
+            }
+          }
+          span {
+            font-size: 1.4rem;
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            margin-left: -4.5px;
+            display: none;
           }
           &.active {
-            background: #ccc;
+            span {
+              display: block;
+            }
           }
         }
         .tabcontent {
           display: none;
+        }
+      }
+      .ad-area {
+        .empty-ad-section{
+          width: 80%;
+          height: 80%;
+          border-left: 3px solid #44475a;
+        }
+        &:hover {
+          .empty-ad-section{
+          border-left: 3px solid #50FA7B;
+          transition: 0.4s;
+          }
         }
       }
     }
