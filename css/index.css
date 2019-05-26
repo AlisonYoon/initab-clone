@@ -122,6 +122,7 @@
   grid-template-rows: 50% 50%;
   font-size: 14px;
   line-height: 18px;
+  overflow: hidden;
 }
 .container section.jsHistory .js-history, .container aside.jsHistory .js-history {
   overflow-y: auto;
@@ -145,27 +146,46 @@
   color: #999;
   text-align: right;
 }
-.container section.jsHistory #jsDate, .container aside.jsHistory #jsDate {
+.container section.jsHistory .js-date, .container aside.jsHistory .js-date {
   color: #6373a2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container section.jsHistory #jsDate .dateandtime, .container aside.jsHistory #jsDate .dateandtime {
+.container section.jsHistory .js-date #jsDate, .container aside.jsHistory .js-date #jsDate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 36%;
+}
+.container section.jsHistory .js-date #jsDate .dateandtime, .container aside.jsHistory .js-date #jsDate .dateandtime {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  height: 95%;
 }
-.container section.jsHistory #jsDate .dateandtime h2, .container aside.jsHistory #jsDate .dateandtime h2 {
+.container section.jsHistory .js-date #jsDate .dateandtime h2, .container aside.jsHistory .js-date #jsDate .dateandtime h2 {
   font-size: 9em;
 }
-.container section.jsHistory #jsDate .dateandtime h2 .ampm, .container aside.jsHistory #jsDate .dateandtime h2 .ampm {
+.container section.jsHistory .js-date #jsDate .dateandtime h2 .ampm, .container aside.jsHistory .js-date #jsDate .dateandtime h2 .ampm {
   font-size: 3rem;
 }
-.container section.jsHistory #jsDate .dateandtime .dateyear, .container aside.jsHistory #jsDate .dateandtime .dateyear {
-  font-size: 2rem;
+.container section.jsHistory .js-date #jsDate .dateandtime .dateyear, .container aside.jsHistory .js-date #jsDate .dateandtime .dateyear {
+  font-size: 1.6rem;
+}
+.container section.jsHistory .js-date .custom-msg, .container aside.jsHistory .js-date .custom-msg {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0 3em;
+}
+.container section.jsHistory .js-date #dontShow, .container aside.jsHistory .js-date #dontShow {
+  border: none;
+  background: none;
+  color: #FFB86C;
+  outline: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

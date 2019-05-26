@@ -182,5 +182,28 @@ function formatAMPM() {
    var strTime = `<div class="dateandtime"><h2>` + hours + ':' + minutes + `<span class="ampm">` + ampm + `</span> </h2><br>` + `<div class="dateyear">` + m + d + "," + year + `</div></div>` ;
 
    jsDate.innerHTML = strTime;
+   //setInterval(formatAMPM,1000);
  }
 formatAMPM();
+//date and time section end
+
+const forgetMe = document.getElementById('forgetMe');
+const dontShow = document.getElementById('dontShow');
+
+function dontShowAgain(){
+
+   if(localStorage.getItem("dontShow")){
+      forgetMe.style.display = 'none';
+   }
+   forgetMe.style.display = 'none';
+   localStorage.setItem(forgetMe.style.display, 'none');
+   console.log("hi");
+}
+dontShow.addEventListener('click', dontShowAgain, true);
+
+//     if(localStorage.getItem("DontShow")) {
+//         $("#forgetMe").hide();
+//     }
+//     $(document).on("click", "#forgetMe", function() {
+//         localStorage.setItem("DontShow", "true");
+//     });
