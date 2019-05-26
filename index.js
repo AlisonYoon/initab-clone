@@ -182,7 +182,7 @@ function formatAMPM() {
    var strTime = `<div class="dateandtime"><h2>` + hours + ':' + minutes + `<span class="ampm">` + ampm + `</span> </h2><br>` + `<div class="dateyear">` + m + d + "," + year + `</div></div>` ;
 
    jsDate.innerHTML = strTime;
-   //setInterval(formatAMPM,1000);
+   setInterval(formatAMPM,1000);
  }
 formatAMPM();
 //date and time section end

@@ -241,6 +241,7 @@
 }
 .container section.githubIssues .tab-area .tabcontent, .container aside.githubIssues .tab-area .tabcontent {
   display: none;
+  color: #6373a2;
 }
 .container section.githubIssues .ad-area .empty-ad-section, .container aside.githubIssues .ad-area .empty-ad-section {
   width: 80%;
